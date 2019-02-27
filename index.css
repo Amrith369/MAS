@@ -267,20 +267,67 @@ footer {
 	font-size: 21;
 	height: 75px;
 }
+#divider {
+	display: none;
+}
 
 /*-------------Mobile View -----------------*/
 @media screen and (max-width: 600px) {
 
-	
+	body {
+		width: 600px;
+		align-content: center;
+	}
 	#titlebar{
 		height: auto;
 		width:100%;
 		background-color: white;
-
+		align-content: center;
+		text-align: center;
+		margin: 0 auto;
+		text-decoration: none;
+	}
+	#Nav {
+		text-align: center;
+		align-content: center;
+	}
+	.menu-icon {
+		font-family: 'Overpass', sans-serif;
+		color: black;
+		font-size: 35vw;
+		padding: 1em;
+		display: inline-block;
+		clear: both;
+		padding: 2em;
+		text-align: center;
+	}
+	.menu {
+		font-size: 12vw;
+		clear: left;
+		display: inline-block;
+		padding: 0.7em;
+		text-align: center;
+		align-content: center;
 	}
 	.socia {
 		display: none;
 		clear: both;
 	}
+	#para {
+		background-image: url("content/Birdy.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto;
+		height: 15%;
+		display: none;
+	}
+#divider {
+		display: none;
+		width: 100%;
+		height: auto;
 
+	}
+	.stickyH + #content {
+	  padding-top: 1em;
+	}
 }
