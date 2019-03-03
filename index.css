@@ -25,8 +25,14 @@ body, h1, h2, h3, h4, h5, h6, a, ul, li, ol, address, p, blockquote {
 .menu-icon{
 	font-family: 'Overpass', sans-serif;
 	color: black;
-	font-size: 35;
+	font-size: 40;
 	padding: 0.2em;
+	display: inline;
+}
+.navi {
+	display: inline;
+}
+.social-links{
 	display: inline;
 }
 .menu{
@@ -38,6 +44,7 @@ body, h1, h2, h3, h4, h5, h6, a, ul, li, ol, address, p, blockquote {
 }
 .menu:visited {
 	text-decoration: none;
+	font-size: 35;
 }
 .menu:hover{
 	color: #666666;
@@ -103,7 +110,6 @@ body, h1, h2, h3, h4, h5, h6, a, ul, li, ol, address, p, blockquote {
 .blurb-img {
 	width: 400px;
 	height: auto;
-	float: left;
 	float: left;
 }
 .about-blurb {
@@ -251,7 +257,7 @@ footer {
 	text-align:center;
 }
 
-.footer-title {
+.footer-title, .secret-title {
 	padding-top: 2em;
 	text-align: center;
 	font-family: 'Overpass', sans-serif;
@@ -259,7 +265,7 @@ footer {
 	font-size: 35;
 	height: 15px;
 }
-.contact {
+.contact, .secret-contact {
 	padding: 2em;
 	text-align: center;
 	font-family: 'Open-Sans', sans-serif;
@@ -270,64 +276,234 @@ footer {
 #divider {
 	display: none;
 }
+.phone {
+	padding: 1em;
+	width: 96%;
+	text-align: center;
+	font-family: 'Open-Sans', sans-serif;
+	color: black;
+	font-size: 25;
+	height: auto;
+	display: block;
+}
+#temp-footer {
+	display: none;
+}
+.socia-list{
+	display: none;
+}
 
 /*-------------Mobile View -----------------*/
 @media screen and (max-width: 600px) {
 
 	body {
-		width: 600px;
+		width: 100%;
+		height: auto;
+		text-align: center;
 		align-content: center;
 	}
 	#titlebar{
-		height: auto;
-		width:100%;
-		background-color: white;
-		align-content: center;
-		text-align: center;
-		margin: 0 auto;
-		text-decoration: none;
-	}
-	#Nav {
 		text-align: center;
 		align-content: center;
-	}
-	.menu-icon {
-		font-family: 'Overpass', sans-serif;
-		color: black;
-		font-size: 35vw;
-		padding: 1em;
-		display: inline-block;
-		clear: both;
-		padding: 2em;
-		text-align: center;
-	}
-	.menu {
-		font-size: 12vw;
-		clear: left;
-		display: inline-block;
-		padding: 0.7em;
-		text-align: center;
-		align-content: center;
-	}
-	.socia {
-		display: none;
-		clear: both;
-	}
-	#para {
-		background-image: url("content/Birdy.png");
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: auto;
-		height: 15%;
-		display: none;
-	}
-#divider {
-		display: none;
 		width: 100%;
 		height: auto;
+	}
+	.menu-icon {
+		font-size: 35vw;
+		padding: 2em;
+		width: 100%;
+		height: auto;
+		display: block;
+		transform: translate(8%,0%);
+	}
+	.navi {
+		display: block;
+		text-align: center;
+		align-content: center;
+		width: 100%;
+		transform: translate(75%,0em);
+	}
+	.menu , .menu:visited, .menu:hover{
+		font-size: 21vw;
+		padding: 0.6em;
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		display: inline-block;
+		text-align: center;
+		transform: translate(-10%,0%);
+	}
+	.social-links{
+		width: 25%;
+		height: auto;
+		padding: 1em;
+		align-content: center;
+		display: block;
+		transform: translate(50%,0%);
 
 	}
-	.stickyH + #content {
-	  padding-top: 1em;
+	.socia {
+		width: 20%;
+		height: auto;
+		margin: 3em;
+		display: inline-block;
+		padding: 1.5em;
+		transform: translate(125%,0%);
+	}
+	 .iconograph {
+		 width: 200px;
+	 }
+	 .social-links {
+		 display: none;
+	 }
+	 ul.socia-list{
+		 width: 100px;
+		 display: inline;
+		 height: auto;
+		 margin: 0 auto;
+		 transform: translate(60%,0%);
+	 }
+	 #content {
+		 align-content: center;
+		 width: 100%;
+		 height: auto;
+	 }
+	 #about, #print, #branding, #web{
+		 text-align: left;
+		 width: 100%;
+		 height: auto;
+		 display: block;
+		 padding: 0em;
+		 margin: 0 auto;
+	 }
+	  #about img, #branding img{
+		 width: 800px;
+		 height: auto;
+		 transform: translate(10%,0%);
+	 }
+	 #print img, #web img{
+		 width: 800px;
+		height: auto;
+		transform: translate(60%,0%);
+	 }
+	.title-header, .title-header1{
+		font-family: 'Overpass', sans-serif;
+	 	color: black;
+	 	font-size: 25vw;
+	 	width: 600px;
+	 	height: auto;
+	 	display: block;
+	 	float: none;
+	 	padding-left: 1em;
+		text-align: center;
+	 }
+	.about-blurb, .about-blurb1{
+		display: block;
+	 	width: 800px;
+	 	height: auto;
+	 	font-family: 'Open-Sans', sans-serif;
+	 	color: black;
+	 	font-size: 16vw;
+	 	padding-left: 1.5em;
+	 }
+	.resume, .resume1 {
+		display: block;
+	 	width: 600px;
+	 	height: auto;
+	 	font-family: 'Overpass', sans-serif;
+	 	color: black;
+	 	font-size: 20vw;
+	 	padding: 1.5em;
+	 }
+	 #temp-footer{
+		 width: 100%;
+		 height: auto;
+		 display: none;
+		 opacity: .0;
+	 }
+	 footer {
+		 align-content: center;
+		 text-align: center;
+		 width: 100%;
+		 height: auto;
+		 display: inline-block;
+	 }
+	 #foot, .contact {
+		 transform: translate(50%,0%);
+		 display: block;
+		 width: 100%;
+		 height: auto;
+	 }
+	 .footer-title{
+	 	padding-top: 2em;
+	 	text-align: center;
+	 	font-family: 'Overpass', sans-serif;
+	 	color: black;
+	 	font-size: 25vw;
+		width: 100%;
+	 }
+	 .contact{
+	 	text-align: center;
+	 	font-family: 'Open-Sans', sans-serif;
+	 	color: black;
+	 	font-size: 16vw;
+	 	width: 100%;
+		text-decoration: none;
+		transform: translate(5%,0%);
+		display: block;
+	 }
+	 .phone{
+	 	padding: 1em;
+	 	width: 96%;
+	 	text-align: center;
+	 	font-family: 'Open-Sans', sans-serif;
+	 	color: black;
+	 	font-size: 21vw;
+	 	height: auto;
+	 	display: block;
+		text-decoration: none;
+		transform: translate(22%,0%);
+	 }
+	 #para, #about-header, #print-header, #branding-header, #web-header{
+		 background-color: #ffffff;
+
+	 }
+	 #secret {
+		 display: block;
+		 width: 100%;
+		 height: auto;
+		 text-align: center;
+		 padding: 1em;
+	 }
+	 .secret-title{
+		display: block;
+		width: 900px;
+	 	height: auto;
+		text-align: center;
+		font-family: 'Overpass', sans-serif;
+ 	 	color: black;
+ 	 	font-size: 25vw;
+	 }
+	.secret-contact {
+		display: block;
+		font-family: 'Open-Sans', sans-serif;
+ 	 	color: black;
+ 	 	font-size: 18vw;
+		width: 800px;
+		height: auto;
+		text-align: center;
+		transform: translate(-4%,0%);
+	 }
+	.port-link {
+		display: block;
+		text-decoration: none;
+		font-family: 'Open-Sans', sans-serif;
+ 	 	color: black;
+ 	 	font-size: 21vw;
+		width: 800px;
+		height: auto;
+		padding: 0em;
+		text-align: center;
+		transform: translate(-5%,0%);
 	}
 }
